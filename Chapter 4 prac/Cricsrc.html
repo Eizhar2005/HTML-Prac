@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Scores</title>
+  <style>
+    /* Centers the table on the page and sets a clean font */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Core table styling with a subtle shadow and rounded corners */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header styling using a green theme */
+    thead {
+      background-color: #006629; 
+      color: #ffffff;
+      text-align: left;
+    }
+
+    /* Padding to give the text room to breathe */
+    th, td {
+      padding: 15px 20px;
+    }
+
+    /* Subtle borders between rows */
+    tbody tr {
+      border-bottom: 1px solid #dddddd;
+      transition: background-color 0.2s ease;
+    }
+
+    /* Zebra striping for better readability */
+    tbody tr:nth-of-type(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Thicker bottom border to finish the table nicely */
+    tbody tr:last-of-type {
+      border-bottom: 3px solid #006629;
+    }
+
+    /* Hover effect to highlight the row the user's mouse is over */
+    tbody tr:hover {
+      background-color: #e2f0e6;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Score</th>
+        <th>Match</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Babar Azam</td>
+        <td>20</td>
+        <td>vs Australia</td>
+      </tr>
+      <tr>
+        <td>Rizwan</td>
+        <td>15</td>
+        <td>vs India</td>
+      </tr>
+      <tr>
+        <td>Shadab Khan</td>
+        <td>10</td>
+        <td>vs England</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
